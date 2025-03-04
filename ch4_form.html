@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <h1>Travel form for a trip</h1>
+        <form action="form.php">
+            <input type="text" placeholder="Enter your name">
+            <br>
+            <label for="sectionida">
+                <input type="radio" value="section a" name="section" id="sectionida">option A
+            </label>
+            <label for="sectionidb">
+                <input type="radio" value="section b" name="section" id="sectionidb">option B
+            </label>
+            <label for="sectionidc">
+                <input type="radio" value="section c" name="section" id="sectionidc">option C
+            </label>
+            <!-- we keep the name of sections same so that at a time only one of the options can be selected (thats the work of radio button) -->
+            <!-- id has to be unique -->
+            <!-- whereas class is a common feature in some tags -->
+            <br>
+            <label for="foodcard">
+                <input type="checkbox" name="canteen" id="foodcard" class="red">Want food canteen card
+            </label>
+            <!-- for="" and id should be same or else user will have to click exactly on the checkbox to select the option -->
+            <br>
+            <textarea name="explain" id="explain" cols="30" rows="10"
+                placeholder="Explain why you want to join"></textarea>
+            <br>
+            <select name="cars" id="cars">
+                <option value="no-car">Select your car</option>
+                <option value="Omni1">Omni1</option>
+                <option value="Omni2">Omni2</option>
+                <option value="Omni3">Omni3</option>
+            </select>
+        </form>
+    </div>
+</body>
+
+</html>
